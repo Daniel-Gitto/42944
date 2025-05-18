@@ -18,7 +18,7 @@ El archivo con el nombre de "Gramatica Asignada" es la transcripción del codigo
 
 El archivo donde se realizan las pruebas del codigo de validación o error se llama "input.txt"
 
-El archivo donde hay dos ejemplos de aceptación y dos ejemplos de error se llama "Ejemplos.txt" donde van a copiar cada ejemplo y reemplazarlo en el codigo "input.txt"
+El archivo donde hay dos ejemplos de aceptación se llama "EjemplosValidos.txt" y dos ejemplos de error se llama "EjemplosInvalidos.txt" donde van a copiar cada ejemplo y reemplazarlo en el codigo "input.txt"
 
 Opcional hay un archivo con el nombre PruebasRealizadas.txt donde hay varios ejemplos para realizar y verificar la gramatica en el archivo input.txt 
 
