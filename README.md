@@ -1,7 +1,11 @@
 Paso 1 Trasladarse por comando de la Terminal CMD a la carpeta de la computadora, Ej     cd C:\Users\PC\Desktop\Analizador 
+
 Paso 2 Clonar el repositorio en la carpeta seleccionada con el comando     git clone https://github.com/Daniel-Gitto/42944.git
+
 Paso 3 Importante para que funciene todo correctamente es trasladarse a la carpeta clonada del repositorio 42944 con el comando     cd C:\Users\PC\Desktop\Analizador\42944
+
 Paso 4 Estando en la carpeta 42944 Abrir el Visual Estudio Code con el comando     code .
+
 Paso 5 Realizar las pruebas de codigo en el archivo input.txt 
 
 El archivo de la gramatica creada para el analizador se llama "Login.g4". Es la Gramatica principal del Codigo pasado a lenguaje ANTLR4!
