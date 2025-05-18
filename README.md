@@ -6,7 +6,7 @@ Paso 3 Importante para que funciene todo correctamente es trasladarse a la carpe
 
 Paso 4 Estando en la carpeta 42944 Abrir el Visual Estudio Code con el comando     code .
 
-Paso 5 Realizar las pruebas copiando el codigo de los archivos EjemplosValidos.txt o EjemplosInvalidos.txt (2 ejemplos de cada uno) reemplazando el contenido del imput.txt con el ejemplo copiado!
+Paso 5 Realizar las pruebas copiando el codigo de los archivos EjemplosValidos.txt o EjemplosInvalidos.txt (2 ejemplos de cada uno) reemplazando el contenido del input.txt con el ejemplo copiado!
 
 
 El archivo de la gramatica creada para el analizador se llama "Login.g4". Es la Gramatica principal del Codigo pasado a lenguaje ANTLR4!
