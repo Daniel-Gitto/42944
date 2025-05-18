@@ -1,0 +1,38 @@
+ejemplos para cambiar en el input.txt
+
+
+//Ejemplo Valido
+
+prueba "Login exitoso" { dado el.usuario es "admin"
+  cuando el.boton es "login"
+  entonces la.pagina debe "bienvenida"
+}
+
+
+
+
+//Ejemplo Valido
+
+
+prueba "Login exitoso" { cuando el.usuario es "admin"
+  cuando el.boton es "login"
+  entonces la.pagina debe "bienvenida"
+}
+
+
+
+
+//Ejemplo Invalido
+
+donde "Login con error" { dado el.usuario es "admin"
+  cuando el.boton es "login"
+  entonces la.pagina debe "bienvenida"
+}
+
+
+
+//Ejemplo Invalido
+
+prueba "Login sin cierre" { dado el.usuario es "admin"
+  cuando el.boton es "login"
+  entonces la.pagina debe "bienvenida"

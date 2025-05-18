@@ -1,0 +1,4 @@
+prueba "Login exitoso" { dado el.usuario es "admin"
+  cuando el.boton es "login"
+  entonces la.pagina debe "bienvenida"
+}

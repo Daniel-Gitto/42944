@@ -1,0 +1,125 @@
+PRUEBAS PARA REALIZAR EN EL ARCHIVO input.txt
+
+//Pruebas Validas ✅
+1°
+
+prueba "Login exitoso" { dado el.usuario es "admin"
+  cuando el.boton es "login"
+  entonces la.pagina debe "bienvenida"
+}
+
+//Muestra en la consola el mensaje
+✅ Entrada válida.
+
+=== Tabla de Tokens y Lexemas ===
+Lexema          → Token
+prueba          → PRUEBA
+"Login exitoso" → TEXTO
+{               → LLAVE_ABRE
+dado            → DADO
+el              → IDENTIFICADOR
+.               → Token #1
+usuario         → IDENTIFICADOR
+es              → ES
+"admin"         → TEXTO
+
+              → NEWLINE
+cuando          → CUANDO
+el              → IDENTIFICADOR
+.               → Token #1
+boton           → IDENTIFICADOR
+es              → ES
+"login"         → TEXTO
+
+              → NEWLINE
+entonces        → ENTONCES
+la              → IDENTIFICADOR
+.               → Token #1
+pagina          → IDENTIFICADOR
+debe            → DEBE
+"bienvenida"    → TEXTO
+
+              → NEWLINE
+}               → LLAVE_CIERRA
+
+              → NEWLINE
+
+=== Árbol de derivación ===
+
+(testSuite (prueba prueba "Login exitoso" { (paso dado (objeto el . usuario) (estado es) (valor "admin") \r\n) (paso cuando (objeto el . boton) (estado es) (valor "login") \r\n) (paso entonces (objeto la . pagina) (estado debe) (valor "bienvenida") \r\n) }))
+
+=== Salida generada por el Visitor ===
+
+
+
+//Prueba valida de advertencia⚠️
+
+prueba "Login Invalido" { dado el.usuario es "invitado"
+  cuando el.boton es "login"
+  entonces la.pagina debe "bienvenida"
+}
+
+//Muestra el mensaje en consola
+⚠️ Usuario invitado detectado → console.error('⚠️ Usuario Invitado'); ❌
+
+
+
+
+
+
+
+//Pruebas Invalidas 🚫
+
+//1°
+
+donde "Login con error" { dado el.usuario es "admin"
+  cuando el.boton es "login"
+  entonces la.pagina debe "bienvenida"
+}
+
+//Muestra en la consola el mensaje
+❌ Error: la entrada debe comenzar con la palabra clave 'prueba'.
+
+//Muestra en la consola el mensaje
+
+//2°
+
+prueba "Login sin cierre" { dado el.usuario es "admin"
+  cuando el.boton es "login"
+  entonces la.pagina debe "bienvenida"
+
+//Muestra en la consola el mensaje
+❌ Error: faltan llaves de apertura o cierre en la prueba.
+
+//3°
+
+prueba "Login incompleto" { dado el.usuario es "admin"
+  clic al.boton "login"
+  entonces la.pagina debe "bienvenida"
+}
+
+//Muestra en la consola el mensaje
+❌ Error en línea 2: se esperaba que comience con 'dado', 'cuando' o 'entonces'.
+   Sugerencia: revisa →   clic al.boton "login"
+
+//4°
+
+prueba "Login con error" { dado el.usuario es "admin"
+  cuando el.boton es login
+  entonces la.pagina debe bienvenida"
+}
+
+//Muestra en la consola el mensaje
+❌ Errores de sintaxis encontrados.  //falta comillas
+
+
+5°
+
+prueba "Login con error" { dado el.usuario es "user"
+  cuando el.boton es "login"
+  entonces la.pagina debe "bienvenida"
+}
+
+//Muestra el mensaje
+❌ Usuario no reconocido. Solo se permiten 'admin' o 'invitado'.
+

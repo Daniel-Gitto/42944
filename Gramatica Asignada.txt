@@ -1,0 +1,23 @@
+<TestSuite> ::= {<Prueba>}*
+
+<Prueba> ::= "prueba" <Texto> "{" {<Paso>}* "}"
+
+<Paso> ::= ("dado" | "cuando" | "entonces") <Objeto> [<Estado>] <Valor> ("y" <Valor>)* "\n"
+
+<Objeto> ::= <Identificador> {"." <Identificador>}*
+
+<Estado> ::= "es" | "no es" | "contiene" | "existe" | "debe"
+
+<Valor> ::= <Texto> | <Numero> | <Booleano> | <Variable> | <Lista>
+
+<Texto> ::= ( "\"" [^"]* "\"" ) | ( "'" [^']* "'" )
+
+<Lista> ::= "[" <Valor> ( "," <Valor>)* "]"
+
+<Identificador> ::= [a-zA-Z_] [a-zA-Z0-9_]*
+
+<Variable> ::= "$" <Identificador>
+
+<Numero> ::= [0-9]+
+
+<Booleano> ::= "verdadero" | "falso"
