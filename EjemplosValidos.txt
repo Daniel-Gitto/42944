@@ -22,17 +22,3 @@ prueba "Login exitoso" { cuando el.usuario es "admin"
 
 
 
-//Ejemplo Invalido
-
-donde "Login con error" { dado el.usuario es "admin"
-  cuando el.boton es "login"
-  entonces la.pagina debe "bienvenida"
-}
-
-
-
-//Ejemplo Invalido
-
-prueba "Login sin cierre" { dado el.usuario es "admin"
-  cuando el.boton es "login"
-  entonces la.pagina debe "bienvenida"

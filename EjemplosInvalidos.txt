@@ -1,0 +1,16 @@
+Ejemplos para cambiar en el input.txt
+
+//Ejemplo Invalido error lexico
+
+donde "Login con error" { dado el.usuario es "admin"
+  cuando el.boton es "login"
+  entonces la.pagina debe "bienvenida"
+}
+
+
+
+//Ejemplo Invalido error de sintaxis
+
+prueba "Login sin cierre" { dado el.usuario es "admin"
+  cuando el.boton es "login"
+  entonces la.pagina debe "bienvenida"

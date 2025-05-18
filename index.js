@@ -16,12 +16,12 @@ async function main() {
 
     // Validaciones sintácticas básicas antes del análisis completo
     if (!input.trim().startsWith("prueba")) {
-        console.error("❌ Error: la entrada debe comenzar con la palabra clave 'prueba'.");
+        console.error("❌ Error Léxico: la entrada debe comenzar con la palabra clave 'prueba'.");
         return;
     }
 
     if (!input.includes('{') || !input.includes('}')) {
-        console.error("❌ Error: faltan llaves de apertura o cierre en la prueba.");
+        console.error("❌ Error Sintáctico: faltan llaves de apertura o cierre en la prueba.");
         return;
     }
 
