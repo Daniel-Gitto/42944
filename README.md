@@ -1,4 +1,4 @@
-Paso 1 Trasladarse por comando de la Terminal CMD a la carpeta de la computadora, Ej     cd C:\Users\PC\Desktop\Analizador 
+Paso 1 Trasladarse por comando de la Terminal CMD a la carpeta creada para clonar el repositorio, Por Ejemplo    cd C:\Users\PC\Desktop\Analizador 
 
 Paso 2 Clonar el repositorio en la carpeta seleccionada con el comando     git clone https://github.com/Daniel-Gitto/42944.git
 
