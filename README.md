@@ -8,6 +8,9 @@ Paso 4 Estando en la carpeta 42944 Abrir el Visual Estudio Code con el comando  
 
 Paso 5 Realizar las pruebas copiando el codigo de los archivos EjemplosValidos.txt o EjemplosInvalidos.txt (2 ejemplos de cada uno) reemplazando el contenido del input.txt con el ejemplo copiado!
 
+Paso 6 Una vez copiadp el codigo ejemplo ejecutar el programa con  run o F5 y generará el Arbol 
+
+Paso 7 En la terminal cmd estando en la carpeta 42944 escribir el comando  npm star y ejecutarlo, si es correcto generara la entrada valida mostrando la tabla de Tokens y Lexemas y el arbol de derivación, si la entrada no es valida mostrara un mensaje de error correspondiente.
 
 El archivo de la gramatica creada para el analizador se llama "Login.g4". Es la Gramatica principal del Codigo pasado a lenguaje ANTLR4!
 
